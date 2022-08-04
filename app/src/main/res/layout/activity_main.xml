@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plano_de_fundo_starwars"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/ScrowViewMain"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--            layout vertical grande-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+                android:text="Selecione um personagem:"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+
+            <!--            layout vertical 1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtNome"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="40dp"
+                    android:background="#97FFFFFF"
+                    android:text="Luke Skywalker"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnVerInfo1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="InfoPage1"
+                    android:text="Ver filmes" />
+            </LinearLayout>
+            <!--            fim layout vertical 1-->
+
+            <!--            layout vertical 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textC3po"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#97FFFFFF"
+                    android:text="C-3PO"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnVerInfo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="InfoPage2"
+                    android:text="Ver filmes" />
+
+            </LinearLayout>
+            <!--            fim layout vertical 2-->
+
+            <!--            layout vertical 3-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#97FFFFFF"
+                    android:text="R2-D2"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnVerInfo3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="InfoPage3"
+                    android:text="Ver filmes" />
+
+            </LinearLayout>
+            <!--            fim layout vertical 3-->
+
+            <!--            layout vertical 4-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#97FFFFFF"
+                    android:text="Darth Vader"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnVerInfo4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="InfoPage4"
+                    android:text="Ver filmes" />
+
+            </LinearLayout>
+            <!--            fim layout vertical 4-->
+
+            <!--            layout vertical 5-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#97FFFFFF"
+                    android:text="Leia Organa"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnVerInfo5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="InfoPage5"
+                    android:text="Ver filmes" />
+
+            </LinearLayout>
+            <!--            fim layout vertical 5-->
+
+            <!--            layout vertical 6-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text6"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#97FFFFFF"
+                    android:text="Owen Lars"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnVerInfo6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="InfoPage6"
+                    android:text="Ver filmes" />
+
+            </LinearLayout>
+            <!--            fim layout vertical 6-->
+
+            <!--            layout vertical 7-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text7"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#97FFFFFF"
+                    android:text="Beru Whitesun"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnVerInfo7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="InfoPage7"
+                    android:text="Ver filmes" />
+
+            </LinearLayout>
+            <!--            fim layout vertical 7-->
+
+            <!--            layout vertical 8-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text8"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#97FFFFFF"
+                    android:text="R5-D4"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnVerInfo8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="InfoPage8"
+                    android:text="Ver filmes" />
+
+            </LinearLayout>
+            <!--            fim layout vertical 8-->
+
+            <!--            layout vertical 9-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text9"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#97FFFFFF"
+                    android:text="Biggs Darklighter"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnVerInfo9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="InfoPage9"
+                    android:text="Ver filmes" />
+
+            </LinearLayout>
+            <!--            fim layout vertical 9-->
+
+            <!--            layout vertical 10-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text10"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#97FFFFFF"
+                    android:text="Obi-Wan Kenobi"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnVerInfo10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="InfoPage10"
+                    android:text="Ver filmes" />
+
+            </LinearLayout>
+            <!--            fim layout vertical 10-->
+
+            <!--            layout vertical 11-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text11"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#97FFFFFF"
+                    android:text="Anakin Skywalker"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnVerInfo11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="InfoPage11"
+                    android:text="Ver filmes" />
+
+            </LinearLayout>
+            <!--            fim layout vertical 11-->
+
+            <!--            layout vertical 12-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text12"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#97FFFFFF"
+                    android:text="Wilhuff Tarkin"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnVerInfo12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="InfoPage12"
+                    android:text="Ver filmes" />
+
+            </LinearLayout>
+            <!--            fim layout vertical 12-->
+
+            <!--            layout vertical 13-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text13"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#97FFFFFF"
+                    android:text="Chewbacca"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnVerInfo13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="InfoPage13"
+                    android:text="Ver filmes" />
+
+            </LinearLayout>
+            <!--            fim layout vertical 13-->
+
+            <!--            layout vertical 14-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text14"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#97FFFFFF"
+                    android:text="Han Solo"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnVerInfo14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="InfoPage14"
+                    android:text="Ver filmes" />
+
+            </LinearLayout>
+            <!--            fim layout vertical 14-->
+
+            <!--            layout vertical 15-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text15"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#97FFFFFF"
+                    android:text="Greedo"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnVerInfo15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="InfoPage15"
+                    android:text="Ver filmes" />
+
+            </LinearLayout>
+            <!--            fim layout vertical 15-->
+
+            <!--            layout vertical 16-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text16"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#97FFFFFF"
+                    android:text="Jabba Desilijic Tiure"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnVerInfo16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="InfoPage16"
+                    android:text="Ver filmes" />
+
+            </LinearLayout>
+            <!--            fim layout vertical 16-->
+
+            <!--            layout vertical 17-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text17"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#97FFFFFF"
+                    android:text="Wedge Antille"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnVerInfo17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="InfoPage17"
+                    android:text="Ver filmes" />
+
+            </LinearLayout>
+            <!--            fim layout vertical 17-->
+
+            <!--            layout vertical 18-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text18"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#97FFFFFF"
+                    android:text="Jek Tono Porkins"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnVerInfo18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="InfoPage18"
+                    android:text="Ver filmes" />
+
+            </LinearLayout>
+            <!--            fim layout vertical 18-->
+
+            <!--            layout vertical 19-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text19"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#97FFFFFF"
+                    android:text="Yoda"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnVerInfo19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="InfoPage19"
+                    android:text="Ver filmes" />
+
+            </LinearLayout>
+            <!--            fim layout vertical 19-->
+
+            <!--            layout vertical 20-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text20"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#97FFFFFF"
+                    android:text="Palpatine"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnVerInfo20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="InfoPage20"
+                    android:text="Ver filmes" />
+
+            </LinearLayout>
+            <!--            fim layout vertical 20-->
+
+
+        </LinearLayout>
+        <!--        fim layout vertical grande-->
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
